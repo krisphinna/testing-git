@@ -1,3 +1,4 @@
+/*master styling*/
 body {
     margin: 0;
 }
@@ -5,6 +6,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
 }
+/* navbar styling*/
 .navbar-wrapper {
     display: flex;
     justify-content: space-between;
@@ -12,6 +14,79 @@ body {
 }
 .left-side {
     display: flex;
-    justify-content: space-between;
+}
+.navbar-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 1em;
+}
+.nav-link-wrapper {
+    border-bottom: 1px solid transparent;
+    height: 22px;
+    transition: .5s;
+}
+.nav-link-wrapper a {
+    color: cadetblue;
+    text-decoration: none;
+    transition: .5s;
+}
+.nav-link-wrapper a:hover {
+    color: black;
+}
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+/*content styling*/
 
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.portfolio-item-wrapper {
+    position: relative;
+}
+.portfolio-img-background {
+    width: 50vw;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-text-wrapper {
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo-wrapper img {
+    width: 50%;
+    margin-bottom: 0;
+}
+.subtitle {
+    color: transparent;
+    transition: 1s;
+}
+.subtitle:hover {
+    color: yellowgreen;
+    font-weight: 600px;
+}
+/* remaining styling for project.html*/
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.profile-img-wrapper img {
+    width: 45vw;
+    height: 85vh;
+}
+.profile-content-wrapper {
+    padding: 30px;
+}.profile-content-wrapper h1 {
+    color: darkseagreen;
 }
